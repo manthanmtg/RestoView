@@ -1,0 +1,38 @@
+.hello {
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+    display: flex;
+    flex-wrap: flex;
+}
+
+.align {
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+body {
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #292E49, #536976, #BBD2C5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #292E49, #536976, #BBD2C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron {
+    padding: 0.5em 0.6em;
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+
+        .btn {
+            padding: 0.5em;
+        }
+    }
+}

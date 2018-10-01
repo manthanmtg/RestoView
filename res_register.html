@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+    <style>
+        .inform {
+            width: 40%;
+            margin: 0 auto;
+        }
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body style="background-image: url(registerback.jpg);background-attachment: fixed;background-size: cover">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand"><a href="restoview.html" style="text-decoration: none;color:white">
+                        <h2 style="font-family: 'Montez', cursive;margin: 1px 1px"><i class="fas fa-utensils"></i> RestoView</h2>
+                    </a></div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">About Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h3 id="pageInfo">
+<!--   Redirecting to duckdev.com after <span id="countdown">10</span> seconds -->
+</h3>
+    <div>
+        <form id="resreg" onsubmit="return redirect();">
+            <div class="inform">
+                Already Registered?
+                <button type="button" value="Sign In" onclick="window.open('res_login.html','_self')" class="btn btn-primary">Log In</button>
+            </div>
+            <div class="inform">
+                <label for="resname">Restaurent Name*</label>
+                <input type="text" class="form-control" id="resname" placeholder="Restaurent Name" required>
+            </div>
+            <div class="form-group inform">
+                <label for="resemail">Email address*</label>
+                <input type="email" class="form-control" id="res_email" placeholder="name@example.com" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group inform">
+                <label for="respass">Create a Password*</label>
+                <input type="password" class="form-control" id="respass" placeholder="Password" required>
+            </div>
+            <div class="form-group inform" style="margin-top: 3px;">
+                <label for="resfounded">Founded*</label>
+                <input type="date" class="form-control" name="resfound" id="resfounded" required>
+            </div>
+            <div class="custom-file inform">
+                <label for="resimage">Upload a Image of your restaurant*</label>
+                <input type="file" class="custom-file-input" id="resimage" required>
+            </div>
+            <div class="custom-file inform">
+                <label for="resvideo">Upload a short video(optional)</label>
+                <input type="file" class="custom-file-input" id="resvideo">
+                <label for="resvideolink">or Enter Video link(optional)</label>
+                <input type="text" class="form-control" id="resvideolink" placeholder="Video Link">
+            </div>
+            <div class="inform">
+                <small id="mandate">Fields marked with * are mandatory.</small>
+            </div>
+            <div class="inform" style="margin-top: 4px;">
+                <button class="btn btn-primary" type="submit" form="resreg" onclick="redirect()">Submit</button>
+                <button class="btn btn-primary" type="reset" form="resreg">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
