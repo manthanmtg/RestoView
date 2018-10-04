@@ -1,14 +1,27 @@
-.hello {
-    width: 30%;
-    margin: 1.66%;
-    float: left;
-    display: flex;
-    flex-wrap: flex;
-}
-
 .align {
     margin: 0 auto;
     margin-left: 5%;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    transition: all 1s;
+    /*  CSS 3 property it says when a action is taken on the object
+     i want all the properties to transition for one sec*/
+}
+
+img:hover {
+    transform: scale(1.05);
+    /*When hovered i want to transform by 1.05 scale growing*/
+
 }
 
 body {
@@ -19,6 +32,10 @@ body {
     background: linear-gradient(to left, #292E49, #536976, #BBD2C5);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.thumbnail {
+    margin: 2px;
 }
 
 .jumbotron {
