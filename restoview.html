@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Review your favourite restaurants</title>
     <!-- Latest compiled and minified CSS -->
@@ -7,28 +8,84 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="restoview.html" style="text-decoration: none;color: white">
+                        <h2 style="font-family: 'Montez', cursive;margin: 1px 1px"><i class="fas fa-utensils"></i> RestoView</h2>
+                    </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search Reataurant">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li><a href="about.html">About Us</a> </li>
+                        
+                        <li><a href="user_login.html"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+                        <li><a href="user_register.html"><span class="glyphicon glyphicon-user"></span>Create an Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <div class="navbar-brand"><a href="restoview.html" style="text-decoration: none;color: white">
-                        <h2 style="font-family: 'Montez', cursive;margin: 1px 1px"><i class="fas fa-utensils"></i> RestoView</h2>
-                    </a></div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="navbar-brand" style="padding-top: 5px;">
+                    <a href="restoview.html" style="text-decoration: none;color: white">
+                        <h2 style="font-family: 'Montez', cursive;margin: 1px 1px"><i class="fas fa-utensils"></i> RestoView</h2></a>
+                </div>
             </div>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Business  <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="res_register.html">Restaurant Register</a></li>
+                            <li><a href="res_login.html">Restaurant Log In</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="about.html">About Us</a> </li>
-                    <li><a href="res_register.html">Restaurant Register</a></li>
-                    <li><a href="res_login.html">Restaurant Log In</a></li>
-                    <li><a href="user_login.html">Log In</a></li>
-                    <li><a href="user_register.html">Create an Account</a></li>
+                    <li><a href="user_register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="user_login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <header height="40px">
         <div class="container ">
             <div class="jumbotron" style="background-image: url(Images/dinner-food-meal-8313.jpg); background-size: cover;">
@@ -39,10 +96,8 @@
             </div>
         </div>
     </header>
-
     <div class="align">
         <div class="row container text-center">
-
             <div class="col-md-4 col-lg-4 col-sm-12 hello">
                 <div class="thumbnail">
                     <img src="Images/onesta.png">
@@ -55,22 +110,18 @@
                     <div class="caption">Chef Special</div>
                 </div>
             </div>
-
             <div class="col-md-4 col-lg-4 col-sm-12 hello">
                 <div class="thumbnail">
                     <img src="Images/onesta.png">
                     <div class="caption">Tomato Soup</div>
                 </div>
             </div>
-
             <div class="col-md-4 col-lg-4 col-sm-12 hello">
                 <div class="thumbnail">
                     <img src="Images/onesta.png">
                     <div class="caption">Chefs Special </div>
                 </div>
             </div>
-
-
             <div class="col-md-4 col-lg-4 col-sm-12 hello">
                 <div class="thumbnail">
                     <img src="Images/onesta.png">
@@ -83,9 +134,8 @@
                     <div class="caption">Tomato Soup</div>
                 </div>
             </div>
-
         </div>
     </div>
-
 </body>
+
 </html>
